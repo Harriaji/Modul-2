@@ -25,38 +25,37 @@
  </head>
  
  <body>
-     <nav class="w-screen bg-purple-700 h-fit overflow-hidden">
-         <div class="py-4 lg:px-8 px-4 max-w-[1280px] h-16 m-auto text-white flex items-center justify-between">
-             <div>
-                 <h1 class="lg:text-2xl text-xl uppercase tracking-wider cursor-pointer font-bold">Navigation</h1>
-             </div>
-             <div class="flex lg:gap-8 gap-6 uppercase tracking-wider cursor-pointer text-lg items-center" id="navItems">
-                 <span class="group">
-                     <a href="index.html">Home</a>
-                     <div class="w-0 group-hover:w-full h-0.5 bg-fuchsia-600 ease-in-out duration-500"></div>
-                 </span>
-                 <span class="group">
-                     <a href="List_Produk.html">Product</a>
-                     <div class="w-0 group-hover:w-full h-0.5 bg-fuchsia-600  ease-in-out duration-500"></div>
-                 </span>
-                 <span class="group">
-                    <a href="Dashboard.html">Dashboard</a>
-                    <div class="w-0 group-hover:w-full h-0.5 bg-fuchsia-600 ease-in-out duration-500"></div>
-                </span>
-                 <span class="group">
-                     Login
-                     <div class="w-0 group-hover:w-full h-0.5 bg-fuchsia-600 ease-in-out duration-500"></div>
-                 </span>
-             </div>
-             <div id="hamburger" class="fa fa-bars flex items-center text-xl" style="display:none;"></div>
-             <div id="mobileNav"
-                 class="fixed flex flex-col gap-8 pt-16 px-4 text-xl uppercase bg-purple-700 h-full inset-0 top-16 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
-                 <span>Services</span>
-                 <span>About</span>
-                 <span>Contact</span>
-             </div>
-         </div>
-     </nav>
+  <nav class="w-full bg-purple-700 h-fit overflow-hidden">
+    <div class="py-4 lg:px-8 px-4 max-w-[1280px] h-16 m-auto text-white flex items-center justify-between">
+      <a class="text-2xl " href="./index.html">
+        <img src="CareSelf.png" alt="CareSelf" srcset="" class="w-1/2">
+    </a>
+      <div class="flex lg:gap-8 gap-6 uppercase tracking-wider cursor-pointer text-lg items-center" id="navItems">
+        <span class="group">
+          <a href="index.html">Home</a>
+          <div class="w-0 group-hover:w-full h-0.5 bg-fuchsia-600 ease-in-out duration-500"></div>
+        </span>
+        <span class="group">
+          <a href="List_Produk.html">Product</a>
+          <div class="w-0 group-hover:w-full h-0.5 bg-fuchsia-600 ease-in-out duration-500"></div>
+        </span>
+        <span class="group">
+          <a href="Dashboard.html">Dashboard</a>
+          <div class="w-0 group-hover:w-full h-0.5 bg-fuchsia-600 ease-in-out duration-500"></div>
+        </span>
+        <span class="group">
+          <a href="login.html">Login</a>
+          <div class="w-0 group-hover:w-full h-0.5 bg-fuchsia-600 ease-in-out duration-500"></div>
+        </span>
+      </div>
+      <div id="hamburger" class="fa fa-bars flex items-center text-xl" style="display: none"></div>
+      <div id="mobileNav" class="fixed flex flex-col gap-8 pt-16 px-4 text-xl uppercase bg-purple-700 h-full inset-0 top-16 w-[70%] left-[-70%] ease-in-out duration-500 cursor-pointer">
+        <span>Services</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </nav>
  
      <script>
          var navItems = document.getElementById("navItems");
@@ -93,27 +92,27 @@
 
  <!--List Produk-->
  <!-- component -->
-<div class="flex flex-wrap m-auto justify-between" style="max-width: 100%;">
+<div class="flex flex-wrap m-auto justify-between mt-20" style="max-width: 100%;">
 
 
       
       <div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
-        <img class="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image" />
+        <img class="h-48 w-full object-cover object-center" src="./Asset/shampoo.jpg" alt="Product Image"  style="background-size: cover;"/>
         <div class="p-5">
-          <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">Product Name</h2>
+          <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">CareSelf Hair Shampoo</h2>
           <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Product description goes here.</p>
           <div class="flex items-center">
-            <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$20.00</p>
-            <p class="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$25.00</p>
+            <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$16.00</p>
+            <p class="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$20.00</p>
             <p class="ml-auto text-base font-medium text-green-500">20% off</p>
           </div>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
             <button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900" onclick="redirectToPage()">
-                Buy
+                Add to Chart
             </button>
             <script>
                 function redirectToPage() {
-                    window.location.href = "formorder2.html";
+                    window.location.href = "chart.html";
                 }
             </script>
         </p>
@@ -121,9 +120,9 @@
       </div>
       
       <div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
-        <img class="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image" />
+        <img class="h-48 w-full object-cover object-center" src="./Asset/conditioner.webp" alt="Product Image" />
         <div class="p-5">
-          <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">Product Name</h2>
+          <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">CareSelf Conditioner</h2>
           <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Product description goes here.</p>
           <div class="flex items-center">
             <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$20.00</p>
@@ -132,11 +131,11 @@
           </div>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
             <button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900" onclick="redirectToPage()">
-                Buy
+                Add to Chart
             </button>
             <script>
                 function redirectToPage() {
-                    window.location.href = "formorder2.html";
+                    window.location.href = "chart.html";
                 }
             </script>
         </p>
@@ -144,9 +143,9 @@
       </div>
       
       <div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
-        <img class="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image" />
+        <img class="h-48 w-full object-cover object-center" src="./Asset/hair-vitamin.jpeg" alt="Product Image" />
         <div class="p-5">
-          <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">Product Name</h2>
+          <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">CareSelf Hair Vitamin</h2>
           <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Product description goes here.</p>
           <div class="flex items-center">
             <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$20.00</p>
@@ -155,11 +154,11 @@
           </div>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
             <button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900" onclick="redirectToPage()">
-                Buy
+                Add to Chart
             </button>
             <script>
                 function redirectToPage() {
-                    window.location.href = "formorder2.html";
+                    window.location.href = "chart.html";
                 }
             </script>
         </p>
@@ -167,9 +166,9 @@
       </div>
       
       <div class="mx-auto mt-11 w-80 transform overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
-        <img class="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image" />
+        <img class="h-48 w-full object-cover object-center" src="./Asset/hair-oil.jpg" alt="Product Image" />
         <div class="p-5">
-          <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">Product Name</h2>
+          <h2 class="mb-2 text-lg font-medium dark:text-white text-gray-900">CareSelf Hair Oil</h2>
           <p class="mb-2 text-base dark:text-gray-300 text-gray-700">Product description goes here.</p>
           <div class="flex items-center">
             <p class="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$20.00</p>
@@ -178,11 +177,11 @@
           </div>
           <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
             <button type="button" class="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900" onclick="redirectToPage()">
-                Buy
+                Add to Chart
             </button>
             <script>
                 function redirectToPage() {
-                    window.location.href = "formorder2.html";
+                    window.location.href = "chart.html";
                 }
             </script>
         </p>
