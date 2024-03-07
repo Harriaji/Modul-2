@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Dashboard</title>
+    <title>Data bahan</title>
 </head>
 <body>
 <!--Dashboard-->
@@ -14,29 +14,65 @@
 <!-- page -->
 <main class="min-h-screen w-full bg-white text-gray-700" x-data="layout">
     <!-- header page -->
-    <header class="flex w-full items-center justify-between p-8  bg-gray-100 p-2" >
+    <header class="flex w-full items-center justify-between border-b-2 border-black bg-gray-100 p-2">
         <!-- logo -->
-        <div class="flex items-center justify-center">
-            <a href="./index.html">
-            <img class="h-6" src="CareSelf.png" >
-        </a>
+        <div class="flex items-center space-x-2">
+            <button type="button" class="text-3xl" @click="asideOpen = !asideOpen"><i class="bx bx-menu"></i></button>
+            <div>Logo</div>
+        </div>
+
+        <!-- button profile -->
+        <div>
+            <button type="button" @click="profileOpen = !profileOpen" @click.outside="profileOpen = false"
+                class="h-20 w-25 overflow-hidden rounded-full">
+                <img src="CareSelf.png" alt="plchldr.co"/>
+            </button>
+
+            <!-- dropdown profile -->
+            <div class="absolute right-2 mt-1 w-48 divide-y divide-gray-200 rounded-md border border-gray-200 bg-white shadow-md"
+                x-show="profileOpen" x-transition>
+                <div class="flex items-center space-x-2 p-2">
+                    <img src="https://plchldr.co/i/40x40?bg=111111" alt="plchldr.co" class="h-9 w-9 rounded-full" />
+                    <div class="font-medium">burrr</div>
+                </div>
+
+                <div class="flex flex-col space-y-3 p-2">
+                    <a href="#" class="transition hover:text-blue-600">My Profile</a>
+                    <a href="#" class="transition hover:text-blue-600">Edit Profile</a>
+                    <a href="#" class="transition hover:text-blue-600">Settings</a>
+                </div>
+
+                <div class="p-2">
+                    <button class="flex items-center space-x-2 transition hover:text-blue-600">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1">
+                            </path>
+                        </svg>
+                        <div>Log Out</div>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="flex">
         <!-- aside -->
         <!-- tailwind.config.js -->
 <!-- component -->
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
+<div class="bg-gray-200 font-sans">
     <div class="flex flex-col sm:flex-row sm:justify-around">
         <div class="w-64 h-screen bg-white">
-            
+            <div class="flex items-center justify-center mt-10">
+                <img class="h-6" src="CareSelf.png">
+            </div>
         <nav class="mt-10">
                 <div x-data="{ open: false }">
                     <button class="w-full flex justify-between items-center py-3 px-6 text-gray-600 cursor-pointer hover:bg-gray-100 hover:text-gray-700 focus:outline-none">
                         <span class="flex items-center">
-                            <a href="login.html"
+                            <a href="Dashboard.html"
                     class="flex items-center">
                     <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -62,8 +98,8 @@
                     </button>
 
                     <div x-show="open" class="bg-gray-100">
-                        <a class="py-2 px-16 block text-sm text-gray-600 hover:bg-blue-500 hover:text-white" href="Data_Bahan.html">Data Bahan</a>
-                        <a class="py-2 px-16 block text-sm text-gray-600 hover:bg-blue-500 hover:text-white" href="./data_product.html">Data Product</a>
+                        <a class="py-2 px-16 block text-sm text-gray-600 hover:bg-blue-500 hover:text-white" href="./data_bahan.html">Data Bahan</a>
+                        <a class="py-2 px-16 block text-sm text-gray-600 hover:bg-blue-500 hover:text-white" href="./data_product.html">Data Product </a>
                     </div>
                 </div>
 
@@ -125,15 +161,64 @@
                 </a>
             </div>
         </div>
-       
+        <!-- main content page -->
+        <div class="w-full">
+            <!-- component -->
+<div class="px-4 sm:px-6 lg:px-8">
+    <div class="">
+      <div class="mt-5 mb-0 ">
+        <button type="button" class="block rounded-md bg-balck px-3 py-2 text-center text-sm font-semibold text-black shadow-sm hover:text-white hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">Add user</button>
+      </div>
     </div>
-
- <!-- main content page -->
- <div class="w-full p-4 bg-gray-200">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quam odit officiis
-    magni doloribus ipsa dolore, dolores nihil accusantium labore, incidunt autem iure quae vitae voluptate,
-    esse asperiores aliquam repellat. Harum aliquid non officiis porro at cumque eaque inventore iure. Modi sunt
-    optio mollitia repellat sed ab quibusdam quos harum!
-</div>
+    <div class="mt-8 flow-root fullscreen">
+      <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+        <div class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+          <table class="w-full divide-y divide-gray-300">
+            <thead>
+              <tr>
+                <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm front-semibold text-black sm:pl-0">Tanggal</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-black">Nama</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-black">ID</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-black">jumlah masuk</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-black">jumlah keluar</th>
+                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-black">Total Stok</th>
+                <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
+                  <span class="sr-only">Edit</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="">
+              <tbody class="">
+              <tr>
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-black sm:pl-0">Najib Ahmed</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">39 years old</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">najibahmed@example.com</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">web developer</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">web developer</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">web developer</td>
+                <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
+                  <a href="#" class="text-black hover:text-white">Edit<span class="sr-only">, Najib Ahmed</span></a>
+                </td>
+              </tr>
+  <tr>
+                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">Shehab Najib</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">13 years old</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">shehabahmed@example.com</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">football player</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">football player</td>
+                <td class="whitespace-nowrap px-3 py-4 text-sm text-black">football player</td>
+                <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
+                  <a href="#" class="text-black hover:text-white">Edit<span class="sr-only">, Shehab Najib</span></a>
+                </td>
+              </tr>
+              <!-- More people... -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
 </main>
 
 <script>
