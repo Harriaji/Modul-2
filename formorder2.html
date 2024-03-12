@@ -5,6 +5,7 @@
      <title>Form Pemesanan</title>
     <meta charset="UTF-8">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <style>
         * {
             margin: 0;
@@ -66,7 +67,7 @@
                         </svg>
                     </a>
                 </div>
-            </div>
+            <!-- </div>
             <a class="flex xl:hidden items-center mr-6 hover:text-gray-900" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -79,7 +80,7 @@
             <a class="xl:hidden self-center mr-12 hover:text-gray-900" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                </svg> -->
             </a>
         </nav>
     </header>
@@ -159,10 +160,36 @@
                     </fieldset>
                 </section>
             </div>
-            <button class="submit-button px-4 py-3 rounded-full bg-purple-700 text-white focus:ring focus:outline-none w-full text-xl font-semibold transition-colors">
+            <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="submit-button px-4 py-3 rounded-full bg-purple-700 text-white focus:ring focus:outline-none w-full text-xl font-semibold transition-colors">
                 Pay Rp 117.000
             </button>
         </div>
+        
+
+<!-- Modal toggle -->
+
+  
+  <!-- Main modal -->
+  <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="rounded-3xl shadow-2xl w-1/2 m-auto bg-white fixed z-50 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+            <div class="p-8 text-center sm:p-12">
+              <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600">
+                Your order is on process
+              </p>
+            
+              <h2 class="mt-6 text-3xl font-bold">
+                Thanks for your order!
+              </h2>
+            
+              <a class="mt-8 inline-block w-full rounded-full bg-indigo-600 py-4 text-sm font-bold text-white shadow-xl" href="./index.html">
+                Buy Another
+              </a>
+            </div>
+            </div>
+  </div>
+  
         <!-- <div class="col-span-1 bg-white lg:block hidden">
             <h1 class="py-6 border-b-4 text-xl text-gray-600 px-8">Order Summary</h1>
             <ul class="py-6 border-b space-y-8 px-8">
@@ -213,5 +240,8 @@
             </div>
         </div>
     </div> -->
+    
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </html>
