@@ -204,7 +204,7 @@
   <div class="max-w-lg mx-6" >
 
     <div class="max-w-xs my-3">
-  <h2 class="font-semibold text-2xl">Tambah Produk</h2>
+  <h2 class="font-semibold text-2xl">Tambah Bahan</h2>
   </div>
 
 
@@ -212,31 +212,31 @@
 <form action="" method="post" enctype="multipart/form-data" class="space-y-4">
 
 
-  <label for="product_name" class="sr-only">Nama Produk</label>
+  <label for="product_name" class="sr-only">Nama Bahan</label>
 
   <div class="relative">
-    <input required="" type="text" name="product_name" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan nama produk">
+    <input required="" type="text" name="product_name" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan nama Bahan">
   </div>
 
   <!-- id product -->
-<label for="product_id" class="sr-only">ID Produk</label>
+<label for="product_id" class="sr-only">ID Bahan</label>
 
 <div class="relative">
-  <input required="" type="text" name="product_id" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan ID Produk">
+  <input required="" type="text" name="product_id" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan ID Bahan">
 </div>
 
 <!-- stock product -->
-<label for="product_stock" class="sr-only">Stock</label>
+<label for="product_stock" class="sr-only">Jumlah Masuk</label>
 
 <div class="relative">
-  <input required="" type="number" name="product_stock" min="1" max="" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan jumlah stok">
+  <input required="" type="number" name="product_stock" min="1" max="" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan jumlah masuk">
 </div>
 
 <!-- price product -->
-<label for="product_price" class="sr-only">Price</label>
+<label for="product_price" class="sr-only">Jumlah Keluar</label>
 
 <div class="relative">
-  <input required="" type="number" name="product_price" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan harga">
+  <input required="" type="number" name="product_price" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan jumlah keluar">
 </div>
 
 <!-- description product -->
@@ -246,27 +246,15 @@
   <textarea required="" name="product_description" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan deskripsi"></textarea>
 </div>
 
-<!-- image product -->
-<label for="product_image" class="sr-only">Image</label>
-
-<div class="relative">
-  <input required="" type="file" name="product_image" accept="image/png, image/gif, image/jpeg" class="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm" placeholder="Masukkan gambar">
-</div>
-
 <!-- submit -->
 <div class="flex items-center justify-start">
-<input type="submit" name="add_product" value="Tambah Produk" class="rounded-lg bg-purple-700 hover:bg-indigo-900 px-5 py-3 text-sm font-medium text-white cursor-pointer">
+<input type="submit" name="add_product" value="Tambah Bahan" class="rounded-lg bg-purple-700 hover:bg-indigo-900 px-5 py-3 text-sm font-medium text-white cursor-pointer">
 
 </div>
 
 </form>
 
 </div>
-
-  
-
-
-
 
 
 </div>
